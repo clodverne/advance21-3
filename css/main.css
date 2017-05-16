@@ -1,0 +1,194 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  height: 100vh;
+  text-align: center;
+  background: url("../img/fon-header.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header .header-row {
+  margin-top: 3rem;
+}
+
+header .cap-row {
+  display: flex;
+  height: 88vh;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+header .cap-row h1,
+header .menu-row a {
+  font-size: 3.8rem;
+  font-family: "Poppins";
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header .menu-row {
+  height: 5rem;
+  margin-bottom: 4rem;
+}
+
+header .menu-row a {
+  font-size: 1.6rem;
+  font-family: "Myriad Pro";
+}
+
+header .menu-row a:focus,
+header .menu-row a:hover {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid #1bf1ad;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+}
+
+section .top-row {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+
+section .top-row .top-col span {
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  color: #303030;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section .top-row .top-col p {
+  font-size: 2.8rem;
+  font-family: "Poppins";
+  color: #666;
+  line-height: 1.571;
+}
+
+section .main-row .left-block img {
+  width: 100%;
+}
+
+section .main-row .left-block span {
+  display: block;
+  width: 40rem;
+  text-align: left;
+  margin-top: -35rem;
+  margin-left: 40rem;
+  font-size: 4.8rem;
+  font-family: "Poppins";
+  color: #303030;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+section .right-block {
+  text-align: left;
+  padding-top: 15rem;
+  z-index: 0;
+}
+
+section .right-block p,
+section .right-block span {
+  font-family: "Poppins";
+  color: #303030;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+section .right-block p {
+  font-weight: 700;
+  margin-top: -40rem;
+  font-size: 1.8rem;
+}
+
+section .right-block span {
+  font-size: 8rem;
+  line-height: 1.047;
+}
+
+section .right-block .ellipse1 {
+  margin-top: -60rem;
+  margin-left: 30rem;
+}
+
+section .right-block .ellipse2 {
+  margin-left: 70rem;
+  margin-top: 30rem;
+}
+
+section .right-block .elem {
+  margin-top: 60rem;
+  margin-left: 30rem;
+}
+
+section .right-block .krest {
+  margin-top: 10rem;
+}
